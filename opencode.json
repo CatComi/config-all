@@ -1,0 +1,15 @@
+{
+  "plugin": [
+    "oh-my-opencode"
+  ],
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "xhs-scraper": {
+      "type": "local",
+      "command": ["npx", "-y", "@xhs/xhs-data-internal-scraper"],
+      "environment": {
+        "NPM_CONFIG_REGISTRY": "http://npm.devops.xiaohongshu.com:7001"
+      }
+    }
+  }
+}
